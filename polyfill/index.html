@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"> 
+	<script>
+
+		function es6ops() {
+			try { 
+				eval('const q=1; let x = (a=1,...b)=> [...[1,`${q}`,3]]; '
+					+ 'for(let x of [1,2,3]) { x*=3; } '
+					+ 'let {a,b,c} = {a:1,b:2,c:3}; '
+					+ 'class TestTest { constructor() { this.a=1; } }'); 
+				return true;
+			} catch(e) { return false; }
+		}
+		console.log('es6?', es6ops());
+		function has_bind() {
+			return typeof Function.prototype.bind == 'function';
+		}
+
+		function script_include(filename)
+		{
+			console.log('including', filename);
+			var head = document.getElementsByTagName('head')[0];
+			var script = document.createElement('script');
+			script.src = filename;
+			script.type = 'text/javascript';
+
+			head.appendChild(script)
+		}   
+
+		if(!es6ops()) {
+			if(!has_bind()) script_include('es5-shim.js');
+			script_include('es6-shim.js');
+			script_include('es6_poly.js');
+		} else script_include('es6_native.js');
+	</script>
+
+</head>
+<body>
+	<div id='asdf'></div>
+</body>
