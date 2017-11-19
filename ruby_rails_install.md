@@ -1,3 +1,5 @@
+based on <http://railsapps.github.io/installrubyonrails-ubuntu.html>
+
 * install rvm
 `\curl -L https://get.rvm.io | bash -s stable --ruby`
 
