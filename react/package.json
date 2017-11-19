@@ -20,7 +20,7 @@
   "scripts": {
     "build": "webpack --devtool source-map",
     "min": "webpack -p --devtool nosources-source-map",
-	 "wws": "webpack-dev-server --devtool source-map"
+	 "wws": "webpack-dev-server "
   },
   "author": "",
   "license": "MIT"

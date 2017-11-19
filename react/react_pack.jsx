@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import moment from 'moment';
+//import React from 'react';
+//import ReactDOM from 'react-dom';
+//import moment from 'moment';
 
 class Comment extends React.Component{
 	constructor(){
