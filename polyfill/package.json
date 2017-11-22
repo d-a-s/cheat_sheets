@@ -1,0 +1,17 @@
+{
+  "name": "polyfill",
+  "version": "1.0.0",
+  "description": "I was curious about having two separate libraries, one which had been transpiled for pre-es6 compatibility (essentially just IE and Opera Mobile), and one for all major browsers which have near full es6 support inbuilt.",
+  "main": "0ws.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "scripts": {
+    "start": "node 0ws.js",
+	 "build": "babel lib -d dist --presets env"
+  },
+  "author": "",
+  "license": "MIT"
+}

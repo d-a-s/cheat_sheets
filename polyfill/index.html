@@ -29,10 +29,10 @@
 		}   
 
 		if(!es6ops()) {
-			if(!has_bind()) script_include('es5-shim.js');
-			script_include('es6-shim.js');
-			script_include('es6_poly.js');
-		} else script_include('es6_native.js');
+			if(!has_bind()) script_include('dist/es5-shim.js');
+			script_include('dist/es6-shim.js');
+			script_include('dist/test.js');
+		} else script_include('lib/test.js');
 	</script>
 
 </head>
