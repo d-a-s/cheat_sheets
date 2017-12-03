@@ -37,3 +37,19 @@ rvm use ruby-2.4.1@myapp --ruby-version --create
 gem install rails
 rails new .
 ```
+
+* misc rails notes:
+```
+rails new (name)
+rails generate (new code)
+	rails g
+	- scaffold
+	rake db:migrate (run all migrations)
+	rake db:rollback
+	rake db:schema:dump
+	rake db:setup		
+rails console (debug)
+rails server (dev server)
+	rails s
+rails dbconsole
+```
